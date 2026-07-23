@@ -1,8 +1,11 @@
 cask "tally" do
-  version "0.1.4"
-  sha256 "711a58d0e85e37671172f5e112a1f2aaceb38f6fd2a985764c1b13f6d48fc885"
+  arch arm: "arm64", intel: "x64"
 
-  url "https://github.com/earth9890/tally/releases/download/v#{version}/Tally-#{version}-arm64.dmg"
+  version "0.1.5"
+  sha256 arm:   "c0187792e78d405558e129bc6d13bbcfeac21eb345e25e2c3233185d9a065795",
+         intel: "e8c0e045bc42b1292d4e4065624c1c6618d4b3bad9387c10a9d8458e229491d6"
+
+  url "https://github.com/earth9890/tally/releases/download/v#{version}/Tally-#{version}-#{arch}.dmg"
   name "Tally"
   desc "Local-first, automatic personal time tracker for the menu bar"
   homepage "https://github.com/earth9890/tally"
@@ -13,7 +16,7 @@ cask "tally" do
   end
 
   auto_updates true
-  depends_on arch: :arm64
+  depends_on macos: ">= :monterey"
 
   app "Tally.app"
 
