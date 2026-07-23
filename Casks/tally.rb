@@ -1,5 +1,5 @@
 cask "tally" do
-  arch arm: "arm64", intel: "74adabded1ebf76bf40c5ab4c5c53fdf9167fb8e23ab4d829d6cb48d564dd3e6"
+  arch arm: "arm64", intel: "x64"
 
   version "0.1.6"
   sha256 arm:   "c4d4cab70ec98d526aaad58719dd833d0566f259b973d9d72da0bc0255f1f4d5",
