@@ -1,9 +1,9 @@
 cask "tally" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.2.9"
-  sha256 arm:   "08eaa509a0067f0541fb62af91733cd4c9439d51f9b36b36708ff375dcad5b2d",
-         intel: "2f169ee6f9f3be867149219608716930691642372350577696ad2decbcf90a37"
+  version "0.2.10"
+  sha256 arm:   "e1c0712f9785a0efee5cccebe6339dbde18e55fab9f5732d8df2ed2e7f965156",
+         intel: "8be1efe0ecd610ff0a0b96b487797f6576cc907a5c41856692bfbed78df040ee"
 
   url "https://github.com/earth9890/tally/releases/download/v#{version}/Tally-#{version}-#{arch}.dmg"
   name "Tally"
